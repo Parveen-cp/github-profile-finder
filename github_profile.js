@@ -1,40 +1,4 @@
 
-
-//--------------------- all the profile of user ----------------------//
-
-// async function profile() {
-//     const data=await fetch("https://api.github.com/users");
-//     const response=await data.json();
-//     const container2=document.getElementById("window");
-
-//     for(let output of response){
-//         const element = document.createElement("div");
-//         element.classList.add("users");
-
-//         const image=document.createElement('img');
-//         image.src=output.avatar_url;
-
-//         const username=document.createElement('h2');
-//         username.textContent=output.login;
-
-//         const anchor=document.createElement('a');
-//         anchor.href=output.html_url;
-//         anchor.textContent="github profile";
-
-//         element.append(image,username,anchor);
-//         container2.append(element);
-//     }
-// }
-// profile();
-
-//--------------------- find by their username -------------------//
-
-// async function profile() {
-//     const data=await fetch("https://api.github.com/users");
-//     const response=await data.json();
-
-
-
 async function githubprofile() {
     try {
     const response=await fetch("https://api.github.com/users");
@@ -143,3 +107,4 @@ async function githubprofile() {
 }
 
 githubprofile();
+
