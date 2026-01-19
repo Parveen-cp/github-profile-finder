@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#container{
+    min-height: 600px;
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 20px;
+    position: relative;
+    background-color: rgb(27, 27, 27);
+    box-shadow: 0px 0px 20px 1px grey;
+    border: 1px solid grey;
+}
+@media screen and (max-width: 390px) {
+    #container{
+        min-height: 500px;
+        width: 400px;
+    }
+    #container #search{
+        height: 40px;
+        width: 300px;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        font-size: 20px;
+    }
+    #container #output{
+        height: 300px;
+        width: 300px;
+        position: absolute;
+        top: 25%;
+        left: 10%;
+    }
+    #container #find{
+        
+    position: absolute;
+    right: 8%;
+    top: 9.5%;
+    }
+ }
+@media screen and (max-width: 600px) {
+    #container{
+        min-height: 500px;
+        width: 450px;
+    }
+    #container #search{
+        height: 40px;
+        width: 315px;
+        font-size: 20px;
+    }
+    #container #find{
+    position: absolute;
+    right: 14%;
+    top: 10%;
+    }
+ }
+#search{
+    height: 40px;
+    width: 350px;
+    outline: none;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    font-size: 25px;
+    background-color: transparent;
+    border: none;
+    color: aqua;
+    border-bottom: 4px solid green;
+}
+#find{
+    position: absolute;
+    right: 14%;
+    top: 9%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    color: antiquewhite;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    color: antiquewhite;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#output{
+    min-height: 300px;
+    width: 300px;
+    position: absolute;
+    top: 25%;
+    left: 21%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+#output img{
+    height: 200px;
+    width: auto;
+    margin: 0px 0px;
+}
+h2{
+    color: rgb(216, 206, 206);
+    text-align: center;
+    margin-top: 10px;
+}
+.profile{
+    height: 300px;
+    width: 300px;
+}
+#anchor{
+    text-decoration: none;
+    font-size: 30px;
+    color: green;
+}
+#details{
+    margin-top: 20px;
+    height: auto;
+    width: auto;
+    font-size: 20px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid grey;
+    color: antiquewhite;
+    cursor: pointer;
+}
+#anchor2{
+    text-decoration: none;
+    font-size: 30px;
+    color: antiquewhite;
+    cursor: pointer;
+}
